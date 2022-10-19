@@ -1,14 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './style/Task.css'
 
-function delTask() {
-    console.log(`Deleting task...${document.getElementById("taskID")}`)
+function Task(props) {
+    return <p>{props.taskTitle}</p>
 }
-
-const Task = (
-    <div id="taskContent">
-        <p>Fazer café</p>
-        <button id="delTask" onClick={delTask}>x</button>
-    </div>
-)
 
 export default Task

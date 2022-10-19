@@ -1,14 +1,15 @@
+import React from 'react';
 import './style/Input.css'
 
-function funcInput(){
+
+function testFunc(){
     console.log("Digitando..")
 }
 
-const Input = (
-    <div>
-        <input id="inputTask" onInput={funcInput} type="text" placeholder="Digite sua próxima taréfa"/>
-    </div>
-)
+
+function Input(props) {
+    return <input id={ props.id } type={ props.type } placeholder={ props.placeholder } onInput={testFunc}/>;
+}
 
 
 export default Input
