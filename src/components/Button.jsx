@@ -2,7 +2,6 @@ import './style/Button.css'
 
 function funClick(){
     console.log('click')
-    document.querySelector("#taskContent > p").innerHTML = document.getElementById("inputTask").value
 }
 
 const Button = (

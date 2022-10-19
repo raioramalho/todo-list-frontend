@@ -11,7 +11,9 @@ function App() {
     <section>
       <div className="App">
         {Bar}
-        {Card}
+        <div id="content">
+          {Card}
+        </div>
       </div>
     </section>
   )
