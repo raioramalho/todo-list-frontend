@@ -8,3 +8,10 @@
     align-items: center;
     justify-items: center;
 }
+
+hr {
+    border: none;
+    width: auto;
+    margin: 0.15rem;
+    border-radius: 3px;
+}

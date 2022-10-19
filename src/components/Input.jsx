@@ -1,4 +1,4 @@
-import './Input.css'
+import './style/Input.css'
 
 function funcInput(){
     console.log("Digitando..")

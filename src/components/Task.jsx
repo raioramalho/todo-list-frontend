@@ -1,9 +1,13 @@
-import './Task.css'
+import './style/Task.css'
+
+function delTask() {
+    console.log("Deleting task..")
+}
 
 const Task = (
     <div id="taskContent">
         <p>Fazer café</p>
-        <button>x</button>
+        <button id="delTask" onClick={delTask}>x</button>
     </div>
 )
 
