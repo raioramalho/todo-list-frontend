@@ -1,7 +1,7 @@
 import './style/Task.css'
 
 function delTask() {
-    console.log("Deleting task..")
+    console.log(`Deleting task...${document.getElementById("taskID")}`)
 }
 
 const Task = (
