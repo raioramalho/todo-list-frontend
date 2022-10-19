@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import initMessage from './components/initMessage'
+import initMessage from '../components/initMessage'
 
 function App() {
   return (
