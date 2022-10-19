@@ -1,4 +1,5 @@
 import React from 'react'
+import myGear from '../gear/Brain'
 import Task from './Task'
 import Button from './Button'
 import './style/Card.css'
@@ -8,7 +9,9 @@ function Card(props){
         <div>
             <div className='card'>
                 <Task taskTitle={props.taskTitle}/>
-                <Button title="X"/>
+                <Button title="X" callfunc={() => {
+                myGear.delTask()
+            }}/>
             </div>
             <hr/>
         </div>

@@ -6,6 +6,9 @@ const myGear = {
     funDigit: function() {
       console.log('Inputing..')
     },
+    delTask: function() {
+      console.log('Deleting Task..')
+    },
   }
 
 
