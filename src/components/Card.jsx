@@ -1,16 +1,18 @@
 import React from 'react'
-import './style/Card.css'
 import Task from './Task'
+import Button from './Button'
+import './style/Card.css'
 
-
-
-const Card = (
-    <div>
-        <div className='card'>
-            <Task taskTitle="Comer pão francês"/>
+function Card(props){
+    return(
+        <div>
+            <div className='card'>
+                <Task taskTitle={props.taskTitle}/>
+                <Button title="X"/>
+            </div>
+            <hr/>
         </div>
-        <hr/>
-    </div>
-)
+    )
+}
 
 export default Card

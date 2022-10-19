@@ -8,7 +8,7 @@ function testFunc(){
 
 
 function Input(props) {
-    return <input id={ props.id } type={ props.type } placeholder={ props.placeholder } onInput={testFunc}/>;
+    return <input id={ props.id } type={ props.type } placeholder={ props.placeholder } onInput={ props.callfunc }/>;
 }
 
 

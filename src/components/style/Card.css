@@ -8,6 +8,7 @@
     height: 3rem;
     align-items: center;
     justify-items: center;
+    border: 1px solid rgb(78, 87, 97);
 }
 
 hr {

@@ -5,16 +5,14 @@ import Card from "../components/Card";
 import './App.css'
 
 
-
 function App() {
-
-
   return (
     <section>
       <div className="App">
-        {Bar}
+        <Bar/>
         <div id="content">
-          {Card}
+          <Card taskTitle="Comer Pão francês.."/>
+          <Card taskTitle="Tomar Café"/>
         </div>
       </div>
     </section>
