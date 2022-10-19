@@ -1,17 +1,17 @@
 import './style/Card.css'
 import Task from './Task'
 
-const taskId = "1"
+
 
 const Card = (
     <div>
-        <div id={taskId} className='card'>
+        <div id="1" className='card'>
             {Task}
         </div>
 
         <hr></hr>
 
-        <div id={taskId} className='card'>
+        <div id="2" className='card'>
             {Task}
         </div>
     </div>
