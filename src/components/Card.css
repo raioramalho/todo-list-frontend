@@ -1,0 +1,14 @@
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px 0px;
+    background-color: #414142;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+#card h3 {
+    width: 100%;
+}

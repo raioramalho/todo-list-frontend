@@ -1,0 +1,11 @@
+#bar {
+    width: 100%;
+    margin-bottom: -5px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    border: solid 1px #333232;
+    border-radius: 8px 0px;
+    box-shadow: #222222 1px 1px 1px 1px;
+}

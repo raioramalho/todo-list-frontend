@@ -1,13 +1,21 @@
+import React from "react";
 import { useState } from 'react'
+import Bar from "../components/Bar";
+import Card from "../components/Card";
 import './App.css'
-import initMessage from '../components/initMessage'
+
 
 function App() {
+
   return (
-    <div className="App">
-      {initMessage}
-    </div>
+    <section>
+      <div className="App">
+        {Bar}
+        {Card}
+      </div>
+    </section>
   )
+
 }
 
 export default App
