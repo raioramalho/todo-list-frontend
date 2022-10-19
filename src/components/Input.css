@@ -1,10 +1,16 @@
 input {
     width: 100%;
-    margin-right: 0.5rem;
-    background-color: #414141;
-    border: solid 1px #414141;
-    padding: 0.5rem;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
     color: white;
     border-radius: 2px;
     font-weight: bold;
+}
+
+input:hover {
+    border-color: #646cff;
+}
+input:focus,
+input:focus-visible {
+    outline: 2px auto -webkit-focus-ring-color;
 }

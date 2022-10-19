@@ -1,8 +1,9 @@
 import './Card.css'
+import Task from './Task'
 
 const Card = (
     <div id="card">
-        <h3 id="Task">Fazer café</h3>
+        {Task}
     </div>
 )
 
