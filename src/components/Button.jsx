@@ -6,7 +6,12 @@ import './style/Button.css'
 function Button(props) {
     return (
         <div>
-            <button id={ props.id } onClick={ props.callfunc }>
+            <button
+                id={ props.id }
+                onClick={ props.callfunc }
+                name="_method"
+                value={ props.value }
+            >
                 { props.title }
             </button>
         </div>
