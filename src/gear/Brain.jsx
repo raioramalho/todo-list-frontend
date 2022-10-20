@@ -1,17 +1,14 @@
-import api from './Api';
+import api from "./Api"
 
 const myGear = {
-  funClick: function() {
-    console.log('Click!')
+  funClick: function () {
+    console.log("Click!")
   },
-
-  funDigit: function() {
-    console.log('Inputing..')
+  funDigit: function () {
+    console.log("Inputing..")
   },
-  delTask: function(id) {
+  delTask: function (id) {
     console.log(`Deleting task: ${id}`)
-
-
   },
 }
 
