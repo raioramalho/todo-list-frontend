@@ -7,7 +7,7 @@ import './style/Card.css'
 function Card(props){
     return(
         <div>
-            <div className='card'>
+            <div id={ props.id } className='card'>
                 <Task taskTitle={props.taskTitle}/>
                 <Button title="X" callfunc={() => {
                 myGear.delTask()
