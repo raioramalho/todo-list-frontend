@@ -10,7 +10,7 @@ function Card(props){
             <div id={ props.id } className='card'>
                 <Task taskTitle={props.taskTitle}/>
                 <Button title="X" callfunc={() => {
-                myGear.delTask(`${ props.id }`)
+                myGear.delTask(`${ props.taskId }`)
             }}/>
             </div>
             <hr/>

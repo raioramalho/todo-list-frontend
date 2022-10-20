@@ -6,7 +6,7 @@ function TaskList(props) {
     const newArray = []
     myArray.forEach((el)=>{
       newArray.push(
-          <Card id={el.id} taskTitle={el.title}/>
+          <Card id={el.id} taskId={el.id} taskTitle={el.title}/>
       )
     })
     return (
