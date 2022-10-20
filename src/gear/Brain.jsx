@@ -9,7 +9,7 @@ const myGear = {
   delTask: function() {
     console.log('Deleting Task..')
   },
-  testTask: "Por o café no copo"
+  testTask: "Por o café no copo",
 }
 
 export default myGear

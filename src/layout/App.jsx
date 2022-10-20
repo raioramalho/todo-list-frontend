@@ -1,9 +1,11 @@
 import React from "react";
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
 import Bar from "../components/Bar";
 import Card from "../components/Card";
 import myGear from "../gear/Brain";
-import './App.css'
+import './App.css';
+
+
 
 
 function App() {
@@ -13,7 +15,6 @@ function App() {
         <Bar/>
         <div id="content">
           <Card taskTitle={myGear.testTask}/>
-          <Card taskTitle="Fazer o café"/>
         </div>
       </div>
     </section>
