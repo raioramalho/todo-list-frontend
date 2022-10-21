@@ -15,7 +15,9 @@
     font-weight: normal;
 }
 
-.card>form {}
+.card>form {
+    font-weight: normal;
+}
 
 hr {
     border: none;
