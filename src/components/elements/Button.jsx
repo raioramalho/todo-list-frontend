@@ -9,6 +9,7 @@ function Button(props) {
         onClick={props.callfunc}
         name="_method"
         value={props.value}
+        type={props.type}
       >
         {props.title}
       </button>

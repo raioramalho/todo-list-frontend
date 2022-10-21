@@ -3,17 +3,22 @@ import myGear from "../gear/Brain"
 import Button from "./elements/Button"
 import "./style/Card.css"
 
+function handleDelTask() {}
+
 function Card(props) {
   return (
     <div>
       <div className="card">
         <p>{props.taskTitle}</p>
-        <Button
-          title="X"
-          callfunc={() => {
-            myGear.delTask(`${props.taskId}`)
-          }}
-        />
+        <form onSubmit={handleDelTask()}>
+          <Button
+            title="X"
+            type="submit"
+            callfunc={() => {
+              myGear.delTask(`${props.taskId}`)
+            }}
+          />
+        </form>
       </div>
       <hr />
     </div>
