@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Bar from "../components/Bar"
 import TaskList from "../components/TaskList"
-import "./App.css"
+import "./styles/App.css"
 
 function App() {
   return (
