@@ -12,7 +12,7 @@ function Card(props) {
         <p>{props.taskTitle}</p>
         <form onSubmit={handleDelTask()}>
           <Button
-            title="X"
+            title="x"
             type="submit"
             callfunc={() => {
               myGear.delTask(`${props.taskId}`)
