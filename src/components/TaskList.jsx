@@ -1,5 +1,8 @@
-import tasks from "../gear/Api"
+import api from "../gear/Api"
+import myGear from "../gear/Brain"
 import Card from "./Card"
+
+const tasks = await api.get(myGear.url)
 
 function TaskList(props) {
   const myArray = tasks
