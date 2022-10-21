@@ -13,5 +13,4 @@ const api = async (method, body) => {
 }
 
 const data = await api("GET")
-
 export default data

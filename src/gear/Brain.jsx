@@ -1,5 +1,3 @@
-import api from "./Api"
-
 const myGear = {
   funClick: function () {
     console.log("Click!")
@@ -9,6 +7,7 @@ const myGear = {
   },
   delTask: function (id) {
     const taskId = { id }.id
+    console.log("Deleting task:", taskId)
   },
 }
 
