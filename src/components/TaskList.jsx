@@ -1,7 +1,7 @@
 import data from "../gear/Api"
 import Card from "./Card"
 
-function TaskList() {
+function TaskList(props) {
   const myArray = data
   const newArray = []
   myArray.forEach((el) => {

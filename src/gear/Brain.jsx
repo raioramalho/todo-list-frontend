@@ -8,7 +8,7 @@ const myGear = {
     console.log("Inputing..")
   },
   delTask: function (id) {
-    console.log(`Deleting task: ${id}`)
+    const taskId = { id }.id
   },
 }
 
