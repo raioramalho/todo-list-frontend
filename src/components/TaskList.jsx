@@ -1,3 +1,4 @@
+import React from "react"
 import api from "../gear/Api"
 import myGear from "../gear/Brain"
 import Card from "./Card"

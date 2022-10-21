@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Bar from "../components/Bar"
 import TaskList from "../components/TaskList"
 import "./styles/App.css"
