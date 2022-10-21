@@ -13,7 +13,7 @@ function Bar(props) {
         <Input
           id="testFunc"
           type="text"
-          placeholder="Digite sua próxima taréfa"
+          placeholder="Digite sua próxima taréfa:"
           callfunc={() => {
             myGear.funDigit()
           }}
