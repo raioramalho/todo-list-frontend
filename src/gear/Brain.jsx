@@ -23,7 +23,7 @@ async function handleAddTask(newTask) {
 }
 
 async function handleDelTask(taskId) {
-  console.log("DelTask!!:", taskId)
+  //console.log("DelTask!!:", taskId)
   const delTask = await api.delete(myGear.url + "/" + taskId)
 }
 
