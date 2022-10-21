@@ -1,14 +1,13 @@
 import React from "react"
 import myGear from "../gear/Brain"
-import Task from "./Task"
-import Button from "./Button"
+import Button from "./elements/Button"
 import "./style/Card.css"
 
 function Card(props) {
   return (
     <div>
       <div className="card">
-        <Task taskTitle={props.taskTitle} />
+        <p>{props.taskTitle}</p>
         <Button
           title="X"
           callfunc={() => {
