@@ -1,6 +1,8 @@
 const myGear = {
   funClick: function () {
-    console.log("Click!")
+    const title = document.getElementById("testFunc").value
+    const newTask = { task: { title: "Testando api", done: "true" } }
+    console.log("AddTask!!", newTask)
   },
   funDigit: function () {
     console.log("Inputing..")

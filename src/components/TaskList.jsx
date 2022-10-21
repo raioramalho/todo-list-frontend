@@ -1,8 +1,8 @@
-import data from "../gear/Api"
+import tasks from "../gear/Api"
 import Card from "./Card"
 
 function TaskList(props) {
-  const myArray = data
+  const myArray = tasks
   const newArray = []
   myArray.forEach((el) => {
     newArray.push(<Card id={el.id} taskId={el.id} taskTitle={el.title} />)

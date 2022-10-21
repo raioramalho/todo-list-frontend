@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { useEffect, useState } from "react"
 import Bar from "../components/Bar"
 import TaskList from "../components/TaskList"
 import "./App.css"

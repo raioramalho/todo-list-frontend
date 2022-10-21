@@ -1,6 +1,6 @@
-const url = "http://localhost:3000/tasks"
+export const url = "http://localhost:3000/tasks"
 
-const api = async (method, body) => {
+export const api = async (method, body) => {
   const req = {
     headers: new Headers({ "Content-Type": "application/json" }),
     method: "GET",
@@ -12,5 +12,5 @@ const api = async (method, body) => {
   return data
 }
 
-const data = await api("GET")
-export default data
+const tasks = await api("GET")
+export default tasks
