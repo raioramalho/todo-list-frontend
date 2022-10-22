@@ -54,14 +54,17 @@ function App() {
         {items.map((item) => (
           <Card id={item.id} key={item}>
             <p>{item.title}</p>
-            <Button
-              title="x"
-              type="submit"
-              onClick={() => {
-                const itemId = `${item.id}`
-                handleDelTask(itemId)
-              }}
-            />
+            <div id="control-box">
+              <Button id="doneTaskBtn" title="v" />
+              <Button
+                id="delTaskBtn"
+                title="x"
+                onClick={() => {
+                  const itemId = `${item.id}`
+                  handleDelTask(itemId)
+                }}
+              />
+            </div>
           </Card>
         ))}
       </div>
