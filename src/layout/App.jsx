@@ -17,17 +17,35 @@ function App() {
         .then((response) => response.json())
         .then((json) => {
           //const upDate = json
-          console.log(json)
+          //console.log(json)
           setItems(json)
         })
     }
     loadData()
   }, [])
 
+  if (items.length == 0) {
+    localStorage.setItem("lastId", 0)
+  } else {
+    localStorage.setItem("lastId", 0 + items.at(-1)["id"] + 1)
+  }
+
+  function handleAddTask(newTask) {
+    //console.log(newTask)
+    setItems((prevState) => [...prevState, newTask])
+    const sendTask = api.post(myGear.urlCreate, newTask)
+  }
+
+  function handleDoneTask(id) {
+    const done = { task: { done: "true" } }
+    setItems((prevState) => prevState)
+    const doneTask = api.put(myGear.url + "/" + id, done)
+  }
+
   function handleDelTask(itemId) {
     //console.log("FUNCTION: DEL", itemId)
-    const sendTask = api.delete(myGear.url + "/" + String(itemId))
     setItems((prevState) => prevState.filter((where) => where.id !== itemId))
+    const sendTask = api.delete(myGear.url + "/" + String(itemId))
   }
 
   return (
@@ -45,16 +63,16 @@ function App() {
               id="addButton"
               title="Adicionar"
               onClick={() => {
-                //const title = document.getElementById("testFunc").value
+                const taskTitle = document.getElementById("testFunc").value
+                const lastId = localStorage.lastId
                 const newTask = {
                   task: {
-                    id: null,
-                    title: document.getElementById("testFunc").value,
+                    id: String(lastId),
+                    title: String(taskTitle),
                     done: false,
                   },
                 }
-                const sendTask = api.post(myGear.urlCreate, newTask)
-                setItems((prevState) => [...prevState, newTask.task])
+                handleAddTask(newTask.task)
               }}
             />
           </Bar>
@@ -66,12 +84,7 @@ function App() {
                   id="doneTaskBtn"
                   title="v"
                   onClick={() => {
-                    const done = { task: { done: "true" } }
-                    const doneTask = api.put(
-                      myGear.url + "/" + `${item.id}`,
-                      done
-                    )
-                    setItems((prevState) => prevState)
+                    handleDoneTask(`${item.id}`)
                   }}
                 />
                 <Button
