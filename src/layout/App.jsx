@@ -55,7 +55,17 @@ function App() {
           <Card id={item.id} key={item}>
             <p>{item.title}</p>
             <div id="control-box">
-              <Button id="doneTaskBtn" title="v" />
+              <Button
+                id="doneTaskBtn"
+                title="v"
+                onClick={() => {
+                  const done = { task: { done: "true" } }
+                  const doneTask = api.put(
+                    myGear.url + "/" + `${item.id}`,
+                    done
+                  )
+                }}
+              />
               <Button
                 id="delTaskBtn"
                 title="x"
