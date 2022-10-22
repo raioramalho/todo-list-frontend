@@ -25,9 +25,9 @@ function App() {
   }, [])
 
   if (items.length == 0) {
-    localStorage.setItem("lastId", 0)
+    localStorage.setItem("lastId", Number(0))
   } else {
-    localStorage.setItem("lastId", 0 + items.at(-1)["id"] + 1)
+    localStorage.setItem("lastId", Number(items.at(-1)["id"] + 1))
   }
 
   function handleAddTask(newTask) {
@@ -67,7 +67,7 @@ function App() {
                 const lastId = localStorage.lastId
                 const newTask = {
                   task: {
-                    id: String(lastId),
+                    id: Number(lastId),
                     title: String(taskTitle),
                     done: false,
                   },
