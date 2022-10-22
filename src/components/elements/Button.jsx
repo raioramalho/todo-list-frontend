@@ -6,10 +6,10 @@ function Button(props) {
     <div>
       <button
         id={props.id}
-        onClick={props.callfunc}
         name="_method"
         value={props.value}
         type={props.type}
+        onClick={props.onClick}
       >
         {props.title}
       </button>
