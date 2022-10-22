@@ -52,7 +52,7 @@ function App() {
           />
         </Bar>
         {items.map((item) => (
-          <Card id={item.id} key={item}>
+          <Card id={item.id} key={item.id}>
             <p>{item.title}</p>
             <div id="control-box">
               <Button
@@ -71,7 +71,11 @@ function App() {
                 title="x"
                 onClick={() => {
                   const itemId = `${item.id}`
-                  handleDelTask(itemId)
+                  //console.log("DEL", itemId)
+                  setItems((prevState) =>
+                    prevState.filter((where) => where.id !== `${item.id}`)
+                  )
+                  //handleDelTask(itemId)
                 }}
               />
             </div>
