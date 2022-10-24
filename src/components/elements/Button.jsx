@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import "../style/Button.css"
 
 function Button(props) {
@@ -8,7 +7,7 @@ function Button(props) {
         id={props.id}
         name="_method"
         value={props.value}
-        type={props.type}
+        className={props.className}
         onClick={props.onClick}
       >
         {props.title}
