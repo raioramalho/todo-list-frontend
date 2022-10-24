@@ -6,7 +6,6 @@ function Button(props) {
       <button
         id={props.id}
         name="_method"
-        value={props.value}
         className={props.className}
         onClick={props.onClick}
       >

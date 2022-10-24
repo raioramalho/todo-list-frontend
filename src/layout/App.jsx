@@ -91,6 +91,7 @@ function App() {
                     handleDoneTask(itemId)
                   }}
                 />
+                {item.done &&
                 <Button
                   id="delTaskBtn"
                   title="x"
@@ -99,7 +100,7 @@ function App() {
                     //console.log("BUTTON: DEL", itemId)
                     handleDelTask(itemId)
                   }}
-                />
+                />}
               </div>
             </Card>
           ))}
