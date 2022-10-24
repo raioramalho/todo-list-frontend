@@ -96,7 +96,7 @@ function App() {
                   id="delTaskBtn"
                   title="x"
                   onClick={() => {
-                    const itemId = item.id //sim o id tá certin
+                    const itemId = item.id
 
                     handleDelTask(itemId)
                   }}
