@@ -97,7 +97,7 @@ function App() {
                   title="x"
                   onClick={() => {
                     const itemId = item.id //sim o id tá certin
-                    //console.log("BUTTON: DEL", itemId)
+
                     handleDelTask(itemId)
                   }}
                 />}
