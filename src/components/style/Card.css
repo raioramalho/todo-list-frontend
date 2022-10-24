@@ -25,3 +25,16 @@ hr {
     margin: 0.12rem;
     border-radius: 3px;
 }
+
+#control-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#doneTaskBtn {
+    color: seagreen;
+}
+
+#delTaskBtn {
+    color: salmon;
+}

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import api from "../gear/Api"
 import myGear from "../gear/Brain"
 import Card from "./Card"
@@ -9,7 +9,7 @@ function TaskList(props) {
   const myArray = tasks
   const newArray = []
   myArray.forEach((el) => {
-    newArray.push(<Card id={el.id} taskId={el.id} taskTitle={el.title} />)
+    newArray.push(<Card taskTitle={el.title} />)
   })
   return <div id="content">{newArray}</div>
 }

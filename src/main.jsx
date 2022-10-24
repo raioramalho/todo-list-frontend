@@ -8,5 +8,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </div>
 )
-
-console.log("start..")
