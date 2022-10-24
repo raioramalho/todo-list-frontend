@@ -1,0 +1,11 @@
+label {
+  font-weight: bold;
+}
+
+.true {
+  color: grey;
+}
+
+.false {
+  color: white;
+}
